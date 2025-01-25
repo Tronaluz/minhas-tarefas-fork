@@ -1,8 +1,17 @@
+import FiltroCard from '../../components/FiltroCard'
+
 const BarraLateral = () => (
   <aside>
     <div>
       <input type="text" placeholder="Buscar" />
-      <div></div>
+      <div>
+        <FiltroCard />
+        <FiltroCard />
+        <FiltroCard />
+        <FiltroCard />
+        <FiltroCard />
+        <FiltroCard />
+      </div>
     </div>
   </aside>
 )

@@ -6,3 +6,5 @@ const FiltroCard = () => (
     <S.Label>pendentes</S.Label>
   </div>
 )
+
+export default FiltroCard
