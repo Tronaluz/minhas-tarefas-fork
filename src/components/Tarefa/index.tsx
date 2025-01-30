@@ -1,0 +1,5 @@
+const Tarefa = () => {
+  ;<div>nome Tarefa</div>
+}
+
+export default Tarefa
