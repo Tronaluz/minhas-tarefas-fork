@@ -1,5 +1,16 @@
-const Tarefa = () => {
-  ;<div>nome Tarefa</div>
-}
+import * as S from './styles'
+
+const Tarefa = () => (
+  <S.Card>
+    <S.Titulo>Nome da Tarefa</S.Titulo>
+    <S.Tag>importante</S.Tag>
+    <S.Tag>Pendete</S.Tag>
+    <S.Descricao />
+    <S.BarraAcoes>
+      <S.Botao>Editar</S.Botao>
+      <S.Botao>Excluir</S.Botao>
+    </S.BarraAcoes>
+  </S.Card>
+)
 
 export default Tarefa
