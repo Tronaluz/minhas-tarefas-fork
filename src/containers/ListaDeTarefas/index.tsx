@@ -5,7 +5,7 @@ const tarefas = [
   {
     titulo: 'Estudar React',
     descricao: 'Estudar React para criar aplicações web',
-    prioridade: 'Alta',
+    prioridade: 'importante',
     status: 'Em andamento'
   },
   {
@@ -17,7 +17,7 @@ const tarefas = [
   {
     titulo: 'Ir ao mercado',
     descricao: 'Fazer compras para a semana',
-    prioridade: 'urgente',
+    prioridade: 'normal',
     status: 'Em andamento'
   }
 ]
