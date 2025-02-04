@@ -10,12 +10,12 @@ function retornaCorDeFundo(props: TagProps): string {
   if ('status' in props) {
     if (props.status === 'pendente') return variaveis.amarelo
     if (props.status === 'concluida') return variaveis.verde
-    return '#ccc'
   } else if ('prioridades' in props) {
-    if (props.status === 'urgente') return variaveis.vermelho
-    if (props.status === 'importante') return variaveis.amarelo2
-    return '#ccc'
+    if (props.prioridade === 'urgente') return variaveis.vermelho
+    if (props.prioridade === 'importante') return variaveis.amarelo2
   }
+
+  return '#ccc'
 }
 
 export const Card = styled.div`
@@ -37,7 +37,7 @@ export const Tag = styled.span<TagProps>`
   color: #fff;
   font-size: 10px;
   font-weight: bold;
-  background-color: ${retornaCorDeFundo(props)};
+  background-color: ${(props) => retornaCorDeFundo(props)};
   border-radius: 8px;
   margin-right: 16px;
   display: inline-block;
