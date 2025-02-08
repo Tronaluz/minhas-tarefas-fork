@@ -6,7 +6,7 @@ import store from './store'
 
 function App() {
   return (
-    <Provider store={}>
+    <Provider store={store}>
       <EstiloGlobal />
       <Container>
         <BarraLateral />
