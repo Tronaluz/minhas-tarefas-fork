@@ -8,7 +8,7 @@ export type Props = {
   contador: number
   legenda: string
   criterio: 'prioridade' | 'status' | 'todas'
-  valor: enums.Prioridade | enums.Status
+  valor?: enums.Prioridade | enums.Status
 }
 
 const FiltroCard = ({ ativo, contador, legenda, criterio, valor }: Props) => {
@@ -24,7 +24,7 @@ const FiltroCard = ({ ativo, contador, legenda, criterio, valor }: Props) => {
   }
 
   return (
-    <S.Card ativo={ativo}>
+    <S.Card ativo={ativo} onClick={filtrar}>
       <S.Contador>{contador}</S.Contador>
       <S.Label>{legenda}</S.Label>
     </S.Card>
