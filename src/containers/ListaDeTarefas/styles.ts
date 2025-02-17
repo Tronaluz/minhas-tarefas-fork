@@ -5,3 +5,10 @@ export const Container = styled.main`
   height: 100vh;
   ovwerflow-y: scroll;
 `
+export const Resultado = styled.p`
+  display: block;
+  margin-top: 40px;
+  magin-bottom: 40px;
+  font-size: 18px;
+  font-weight: bold;
+`
